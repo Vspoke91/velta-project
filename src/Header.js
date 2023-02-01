@@ -1,11 +1,11 @@
 import React from 'react'
 import './Header.css'
 
-function Header() {
+function Header({logo_Name}) {
   return (
     <header className="App-header">
         <a className="App-logo" href='index'>
-            <span>Velta Projects</span>
+            <span>{logo_Name}</span>
         </a>
         <ul>
             <li><a className='Navigate-Seleted' href="index">Code</a></li>

@@ -4,7 +4,7 @@ import Header from './Header';
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Header logo_Name={'Velta Projects'}/>
     </div>
   );
 }
