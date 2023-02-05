@@ -1,0 +1,80 @@
+.ContentObject{
+    display: flex;
+    margin: 40px;
+
+    flex-direction: column-reverse;
+    
+    border-color: #2c2c2c;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 3px;
+    box-shadow: 5px 5px;
+
+}
+.TextSection{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.TextSection h1{
+      color: #388bfd;;
+}
+
+.TextSection h3{
+    color: #929292;
+}
+
+.TextSectionTittle{
+    text-align: center;
+    size: 10px;
+
+    overflow-x: auto;
+}
+
+.TextSectionDescription{
+    overflow-x: auto;
+
+    height: 100%;
+}
+
+.TextSectionCodingLanguage{
+    width: 100%;
+    background-color: #141a22;
+    display: flex;
+
+    align-items: center;
+
+    overflow-x: auto;
+    height: 80px;
+}
+
+.TextSectionCodingLanguage h4{
+    margin: 0px 8px;
+    color:#388bfd ;
+
+    white-space: nowrap;
+
+    background-color: #0f376f;
+    padding: 3px 5px;
+
+    border-radius: 20px;
+}
+
+
+.PictureSection{
+    display: flex;
+    flex: 1;
+    align-items: center;
+
+    background-position: center;
+    background-color: #424242;
+    background-blend-mode: multiply;
+}
+
+.PictureSection img{
+    display: block;
+    margin: auto;
+    width: calc(100% / 3);
+
+}

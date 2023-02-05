@@ -8,7 +8,7 @@ function Header({logo_Name}) {
             <span>{logo_Name}</span>
         </a>
         <ul>
-            <li><a className='Navigate-Seleted' href="index">Code</a></li>
+            <li><a className='Header-Seleted' href="index">Code</a></li>
             <li><a href="index">Digital Art</a></li>
             <li><a href="index">My Life</a></li>
         </ul>
