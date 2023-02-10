@@ -9,6 +9,7 @@
   width: 100%;
 
   overflow-x: auto;
+  z-index: 2;
 }
 
 .App-logo{

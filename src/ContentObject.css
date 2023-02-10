@@ -1,7 +1,6 @@
 .ContentObject{
     display: flex;
-    margin: 40px;
-
+    margin: calc(100% * 0.05);
     flex-direction: column-reverse;
     
     border-color: #2c2c2c;
@@ -9,7 +8,6 @@
     border-style: solid;
     border-radius: 3px;
     box-shadow: 5px 5px;
-
 }
 .TextSection{
     display: flex;
@@ -18,11 +16,14 @@
 }
 
 .TextSection h1{
-      color: #388bfd;;
+    transition: 0.5s;
+    color: #388bfd;;
 }
 
 .TextSection h3{
+    white-space: break-spaces;
     color: #929292;
+    word-wrap: normal;
 }
 
 .TextSectionTittle{
@@ -35,10 +36,12 @@
 .TextSectionDescription{
     overflow-x: auto;
 
+
+    padding: 0px 10px;
     height: 100%;
 }
 
-.TextSectionCodingLanguage{
+.TextSectionSkills{
     width: 100%;
     background-color: #141a22;
     display: flex;
@@ -49,7 +52,7 @@
     height: 80px;
 }
 
-.TextSectionCodingLanguage h4{
+.TextSectionSkills h4{
     margin: 0px 8px;
     color:#388bfd ;
 
@@ -65,16 +68,34 @@
 .PictureSection{
     display: flex;
     flex: 1;
-    align-items: center;
 
+    align-items: end;
+    justify-content: center;
+
+    background-size: cover;
     background-position: center;
     background-color: #424242;
     background-blend-mode: multiply;
+    background-repeat: no-repeat;
 }
 
 .PictureSection img{
-    display: block;
+    display: flex;
     margin: auto;
-    width: calc(100% / 3);
+    width: calc(100% / 1.4);
+    max-width: 350px;
+}
 
+.PictureSectionNavigation{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    z-index: 1;
+
+}
+
+.PictureSectionNavigation input{
+    height: 15px;
+    width: 15px;
+    margin-bottom: 10px;
 }
