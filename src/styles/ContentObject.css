@@ -27,21 +27,23 @@
 }
 
 .TextSectionTittle{
-    text-align: center;
-    size: 10px;
+    font-size: 2.3rem;
 
+    text-align: center;
     overflow-x: auto;
 }
 
 .TextSectionDescription{
+    font-size: 1.3rem;
+
     overflow-x: auto;
-
-
     padding: 0px 10px;
     height: 100%;
 }
 
 .TextSectionSkills{
+    font-size: 1.3rem;
+
     width: 100%;
     background-color: #141a22;
     display: flex;
@@ -54,7 +56,7 @@
 
 .TextSectionSkills h4{
     margin: 0px 8px;
-    color:#388bfd ;
+    color:#388bfd;
 
     white-space: nowrap;
 
