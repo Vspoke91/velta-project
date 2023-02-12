@@ -1,5 +1,5 @@
 import React from 'react'
-import './ContentObject.css'
+import '../styles/ContentObject.css'
 
 function ContentObject({Tittle,Description,Pictures,Skills}) {
 

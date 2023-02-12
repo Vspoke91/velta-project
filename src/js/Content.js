@@ -1,6 +1,6 @@
 import React from 'react'
+import '../styles/Content.css'
 import ContentObject from './ContentObject'
-import './Content.css'
 
 function Content({contentItems}) {
 

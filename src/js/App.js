@@ -1,10 +1,9 @@
-import React, {useState} from 'react'
-import './App.css';
+import React from 'react'
+import '../styles/App.css';
 import Content from './Content';
 import Header from './Header';
 import Navigation from './Navigation';
-import ContentData from './ContentData';
-
+import ContentData from '../data/ContentData';
 
 function App() {
 
