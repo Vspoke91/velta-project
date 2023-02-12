@@ -15,7 +15,7 @@
 .App-logo{
   display: flex;
   color: white;
-  font-size: 25px;
+  font-size: 1.5rem;
   font-weight: bold;
   align-items: center;
   height: 100%;
@@ -40,11 +40,11 @@
 
 .App-header ul li{
   list-style-type: none;
-  font-size: 20px;
   height: inherit;
 }
 
 .App-header ul li a{
+  font-size: 1.2rem;
   display: flex;
   height: inherit;
   align-items: center;
