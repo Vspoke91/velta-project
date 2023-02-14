@@ -1,21 +1,19 @@
 import React from 'react'
-import '../styles/App.css';
-import Content from './Content';
-import Header from './Header';
-import Navigation from './Navigation';
+import Content from '../components/Content';
+import Header from '../components/Header';
+import Navigation from '../components/Navigation';
 import ContentData from '../data/ContentData';
 
-function App() {
-
+function Coding() {
   return (
-    <div className="App">
+    <div>
       <Header logo_Name={'Velta Projects'}/>
       <div className='App-main'>
         <Navigation contentItems = {ContentData}/>
         <Content contentItems = {ContentData}/>
       </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default Coding

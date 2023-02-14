@@ -1,0 +1,14 @@
+#error-page{
+    
+    text-align: center;
+    background-color: black;
+}
+
+#error-page h1{
+    color: #a80303;
+    width: 100%;
+}
+
+#error-page p{
+    color: white;
+}
