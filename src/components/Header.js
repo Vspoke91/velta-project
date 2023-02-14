@@ -1,5 +1,4 @@
 import React from 'react'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import '../styles/Header.css'
 
 function Header({logo_Name}) {
@@ -9,9 +8,9 @@ function Header({logo_Name}) {
             <span>{logo_Name}</span>
         </a>
         <ul>
-            <li><a href="index">My Life</a></li>
-            <li><a className='Header-Seleted' href="index">Code</a></li>
-            <li><a href="index">Digital Art</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/Coding">Coding</a></li>
+            <li><a href="/ArtWork">Art Work</a></li>
         </ul>
     </header>
   )
