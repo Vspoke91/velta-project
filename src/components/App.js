@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider} from 'react-router-dom'
 import '../styles/App.css';
 import HomePage from '../pages/Home'
 import CodingPage from '../pages/Coding'
+import ErrorPage from '../pages/ErrorPage';
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
     {
       path: "/",
       element: <CodingPage/>,
+      errorElement: <ErrorPage />,
     },
   ]);
 
