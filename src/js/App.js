@@ -1,19 +1,21 @@
 import React from 'react'
+import { createBrowserRouter, RouterProvider} from 'react-router-dom'
 import '../styles/App.css';
-import Content from './Content';
-import Header from './Header';
-import Navigation from './Navigation';
-import ContentData from '../data/ContentData';
+import HomePage from '../pages/Home'
+import CodingPage from '../pages/Coding'
 
 function App() {
 
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <CodingPage/>,
+    },
+  ]);
+
   return (
     <div className="App">
-      <Header logo_Name={'Velta Projects'}/>
-      <div className='App-main'>
-        <Navigation contentItems = {ContentData}/>
-        <Content contentItems = {ContentData}/>
-      </div>
+      <RouterProvider router={router} />
     </div>
   );
 }
