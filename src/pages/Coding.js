@@ -1,7 +1,7 @@
 import React from 'react'
-import Content from '../js/Content';
-import Header from '../js/Header';
-import Navigation from '../js/Navigation';
+import Content from '../components/Content';
+import Header from '../components/Header';
+import Navigation from '../components/Navigation';
 import ContentData from '../data/ContentData';
 
 function Coding() {
