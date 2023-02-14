@@ -1,8 +1,11 @@
 import React from 'react'
+import Header from '../components/Header';
 
 function ArtWork() {
   return (
-    <div>ArtWork</div>
+    <div className='main'>
+      <Header logo_Name={'Velta Projects'}/>
+    </div>
   )
 }
 
