@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/Navigation.css'
 
-function Navigation({contentItems}) {
+function SideBarNavigation({contentItems}) {
 
   let tittleElements = new Array(contentItems.length);
 
@@ -23,4 +23,4 @@ function Navigation({contentItems}) {
   )
 }
 
-export default Navigation
+export default SideBarNavigation
