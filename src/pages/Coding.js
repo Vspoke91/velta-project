@@ -1,16 +1,16 @@
 import React from 'react'
-import Content from '../components/Content';
 import Header from '../components/Header';
-import Navigation from '../components/Navigation';
-import ContentData from '../data/ContentData';
+import Content from '../components/Content';
+import SideBarNavigation from '../components/SideBarNavigation';
+import ContentData from '../data/CodingProjectsData'
 
 function Coding() {
   return (
-    <div>
-      <Header logo_Name={'Velta Projects'}/>
-      <div className='App-main'>
-        <Navigation contentItems = {ContentData}/>
-        <Content contentItems = {ContentData}/>
+    <div className='main'>
+      <Header logo_Name={'Velta Projects'} />
+      <div>
+        <SideBarNavigation contentItems={ContentData}/>
+        <Content contentItems={ContentData}/>
       </div>
     </div>
   )

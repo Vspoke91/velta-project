@@ -1,6 +1,31 @@
-import React from 'react'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import '../styles/Header.css'
+import React from 'react';
+import { useLocation } from 'react-router-dom';
+import '../styles/Header.css';
+
+
+function SelectorSwitch(){
+
+  let linkElements =
+  [
+     React.createElement('a', {href: '/'}, "Home"),
+     React.createElement('a', {href: '/Coding'}, "Coding"),
+     React.createElement('a', {href: '/ArtWork'}, "Art Work"),
+  ]
+  
+  switch(useLocation().pathname) {
+    case '/':
+      linkElements[0] = React.cloneElement(linkElements[0], {className: 'Header-Selected'});
+      break;
+    case '/Coding':
+      linkElements[1] = React.cloneElement(linkElements[1], {className: 'Header-Selected'});
+      break;
+    case '/ArtWork':
+      linkElements[2] = React.cloneElement(linkElements[2], {className: 'Header-Selected'});
+      break;
+  }
+
+  return linkElements;
+}
 
 function Header({logo_Name}) {
   return (
@@ -8,11 +33,9 @@ function Header({logo_Name}) {
         <a className="App-logo" href='index'>
             <span>{logo_Name}</span>
         </a>
-        <ul>
-            <li><a href="index">My Life</a></li>
-            <li><a className='Header-Seleted' href="index">Code</a></li>
-            <li><a href="index">Digital Art</a></li>
-        </ul>
+        <nav>
+          {SelectorSwitch()}
+        </nav>
     </header>
   )
 }
