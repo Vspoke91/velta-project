@@ -1,15 +1,22 @@
 .mainContent{
     padding-top: 60px;
     color: white;
-
     text-align: center;
 }
 
 .contentTittle{
+    padding: 150px 0;
     background-color: rgb(47, 47, 100);
 }
 
 .contentTittle h1{
+    font-size: clamp(25px, 10vw, 65px);
     color: #e2edff;
     margin: 0;
+    padding: 0;
+}
+
+.contentCoding {
+    background-color: rgb(129, 117, 103);
+
 }
