@@ -1,0 +1,15 @@
+.mainContent{
+    padding-top: 60px;
+    color: white;
+
+    text-align: center;
+}
+
+.contentTittle{
+    background-color: rgb(47, 47, 100);
+}
+
+.contentTittle h1{
+    color: #e2edff;
+    margin: 0;
+}
