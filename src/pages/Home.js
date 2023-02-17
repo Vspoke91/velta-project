@@ -7,7 +7,7 @@ function Home() {
     <divc className='main'>
       <Header logo_Name={'Velta Projects'}/>
       <div className='mainContent'>
-        <div className='contentTittle'>
+        <div className='contentTittle' style={{backgroundImage: "url(https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg)"}}>
           <h1>Velta Projects</h1>
         </div> {/*This will be tittle with a background of all my work like (20. Alexis Johnson Art) https://www.sitebuilderreport.com/inspiration/modern-websites?a=ga&keyword=dsa-363651420386&ad=624613568096&gclid=Cj0KCQiAxbefBhDfARIsAL4XLRrRf1BHkaaZKXrPIml5i91turSWLEtz4bpT5Tb4m4uW8Pvckt60dq8aAn-ZEALw_wcB */}
         
