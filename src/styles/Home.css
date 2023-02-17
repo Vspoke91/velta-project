@@ -1,0 +1,125 @@
+.mainContent{    
+    display: block;
+    padding-top: 60px;
+    margin: auto;
+    color: white;
+    text-align: center;
+}
+
+.contentTittle{
+    padding: min(21vh, 200px) 0;
+    background-color: rgba(0, 0, 0, 0.178);
+    background-blend-mode: multiply;
+
+}
+
+.contentTittle h1{
+    font-size: clamp(25px, 10vw, 65px);
+    color: #e2edff;
+    margin: 0;
+    padding: 0;
+}
+
+.contentItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 10px;
+    max-height: 1000px;
+
+    margin: 100px auto;
+    max-width: 1800px;
+
+    background-size: 0;
+    }
+
+.invertFlex{
+    flex-direction: row-reverse;
+}
+
+.invertFlex .itemText{
+    flex: 0.5;
+    margin-left: 10vh;
+    margin-right: 0;
+}
+
+.itemText{
+    flex: 0.5;
+    margin-right: 10vh;
+    margin-left: 0vh;
+    padding-bottom: 4vh;
+}
+
+.itemText h1{
+    font-size: 2.5rem;
+}
+
+.itemText h2{
+    font-size: 1.3rem;
+}
+
+.itemText a{
+    font-size: 1.5rem;
+    color: rgb(173, 173, 173);
+    text-decoration: none;
+    
+    border-color: #3396e2;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+}
+
+.itemText a:hover, .itemText a:active{
+    color: white;
+    font-size: 1.55rem;
+    transition: 0.7s;
+}
+
+.itemImages{
+    flex: 0.5;
+    margin: 0;
+    padding: 0;
+}
+
+.itemImages img{
+    width: 100%;
+}
+
+@media(max-width: 1000px){
+    .itemImages{
+        display: none;
+    }
+
+    .itemText{
+        margin: 0;
+    }
+
+    .contentItem {
+        display: block;
+        
+        margin: 150px 0;
+
+        padding-top: 0.1vh;
+        padding-bottom: 0.1vh;
+
+        background-color: #383838;
+        background-size: cover;
+        background-blend-mode: multiply;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        animation-name: example;
+        animation-duration: 1s;
+    }
+
+}
+
+@keyframes example {
+    0%   {  
+        background-color: #000000;
+    }
+
+    100% {  
+        background-color: #383838;
+    }
+}

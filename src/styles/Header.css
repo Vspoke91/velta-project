@@ -54,10 +54,8 @@
 }
 
 .App-header nav a.active, .App-header nav a:hover{
-
-  transition: .5s;
-
   color: #a5abb9;
+  transition: .5s;
 }
 
 .Header-Selected{  
