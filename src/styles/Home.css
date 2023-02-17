@@ -46,6 +46,7 @@
     flex: 0.5;
     margin-right: 10vh;
     margin-left: 0vh;
+    padding-bottom: 4vh;
 }
 
 .itemText h1{
@@ -54,6 +55,22 @@
 
 .itemText h2{
     font-size: 1.3rem;
+}
+
+.itemText a{
+    font-size: 1.5rem;
+    color: rgb(173, 173, 173);
+    text-decoration: none;
+    
+    border-color: #3396e2;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+}
+
+.itemText a:hover, .itemText a:active{
+    color: white;
+    font-size: 1.55rem;
+    transition: 0.7s;
 }
 
 .itemImages{

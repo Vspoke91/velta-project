@@ -14,7 +14,8 @@ function Home() {
         <div className='contentItem' style={{backgroundImage: "url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/800px-Image_created_with_a_mobile_phone.png)"}}>
           <div className='itemText'>
             <h1>Coding</h1>
-            <h2>I have being coding since I was 16 years old in middle School</h2>
+            <h2>Coding is a section made to show all the projects I have work throughout my developer journey<br/><br/> Games, Destop Apps, Mobile apps</h2>
+            <a href='/Coding'>Go to section</a>
           </div>
           <div className='itemImages'>
             <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/800px-Image_created_with_a_mobile_phone.png'/>
@@ -24,14 +25,15 @@ function Home() {
         <div className='contentItem invertFlex' style={{backgroundImage: "url(https://media.istockphoto.com/id/825383494/photo/business-man-pushing-large-stone-up-to-hill-business-heavy-tasks-and-problems-concept.jpg?s=612x612&w=0&k=20&c=wtqvbQ6OIHitRVDPTtoT_1HKUAOgyqa7YzzTMXqGRaQ=)"}}>
           <div className='itemText'>
               <h1>Art Work</h1>
-              <h2>My digital art is something I have done the same mount as my coding</h2>
+              <h2>In my art section you will be able to see my creative side</h2>
+              <a href='/ArtWork'>Go to section</a>
             </div>
             <div className='itemImages'>
               <img src='https://media.istockphoto.com/id/825383494/photo/business-man-pushing-large-stone-up-to-hill-business-heavy-tasks-and-problems-concept.jpg?s=612x612&w=0&k=20&c=wtqvbQ6OIHitRVDPTtoT_1HKUAOgyqa7YzzTMXqGRaQ='/>
             </div>
         </div>
         
-        <div className='contentMyLife'>My life section</div>
+        {/* <div className='contentMyLife'>My life section</div> */}
       </div>
     </divc>
   )
