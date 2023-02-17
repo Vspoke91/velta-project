@@ -91,7 +91,12 @@
     }
 
     .itemText{
-        margin: 0;
+        margin: auto;
+    }
+
+    .invertFlex .itemText{
+        flex: 0.5;
+        margin: auto;
     }
 
     .contentItem {
