@@ -17,14 +17,15 @@ const items =
     {
         tittle: "Order Tracker",
         description: 
-            "Order Tracker is a program I made to help me at work to keep track of orders to customers.\n\n"+
-            "The way it works is like a exel sheet."
+            "Order Tracker is a program I made to help me at work to keep track of customers orders.\n\n"+
+            "Works like an exel sheet, but is more focused to its purpose"
         ,
         skills: ["Java", "JavaFX"],
         images: 
         [
-            "https://ichef.bbci.co.uk/news/999/cpsprodpb/15951/production/_117310488_16.jpg", 
-            "https://www.gannett-cdn.com/presto/2021/03/22/NRCD/9d9dd9e4-e84a-402e-ba8f-daa659e6e6c5-PhotoWord_003.JPG"
+            "/images/Coding/OrderTracker_1.png", 
+            "/images/Coding/OrderTracker_2.png", 
+            "/images/Coding/OrderTracker_3.png"
         ]
     },
 ]
