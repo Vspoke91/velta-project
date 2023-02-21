@@ -21,11 +21,9 @@ function Coding() {
   return (
     <div className='main'>
       <Header logo_Name={'Velta Projects'} />
+      <SideBarNavigation contentItems={ContentData}/>
       <div className='mainContent mainContentCoding'>
-        <SideBarNavigation contentItems={ContentData}/>
-        <div className='contentItems'>
-          {contentElements}
-        </div>
+        {contentElements}
       </div>
     </div>
   )
