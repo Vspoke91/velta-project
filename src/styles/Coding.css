@@ -1,7 +1,17 @@
-.ContentObject{
+#codingPageContent{
     display: flex;
-    margin: calc(100% * 0.05);
+    flex-direction: column;
+    align-items: center;
+    padding-left: 250px;
+}
+
+#codingPageContent .ContentItem{
+    display: flex;
     flex-direction: column-reverse;
+
+    margin: clamp(10px, calc(100% * 0.05), 50px) 0;
+    max-width: 1000px;
+    width: 90%;
     
     border-color: #2c2c2c;
     border-width: 2px;
@@ -9,65 +19,51 @@
     border-radius: 3px;
     box-shadow: 5px 5px;
 }
-.TextSection{
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-}
 
-.TextSection h1{
-    transition: 0.5s;
+#codingPageContent .TextSectionTittle{
     color: #388bfd;;
-}
 
-.TextSection h3{
-    white-space: break-spaces;
-    color: #929292;
-    word-wrap: normal;
-}
-
-.TextSectionTittle{
     font-size: 2.3rem;
-
     text-align: center;
     overflow-x: auto;
 }
 
-.TextSectionDescription{
+#codingPageContent .TextSectionDescription{
+    white-space: break-spaces;
+    color: #929292;
+    word-wrap: normal;
+
     font-size: 1.3rem;
 
     overflow-x: auto;
     padding: 0px 10px;
-    height: 100%;
+    height: 100%;  
 }
 
-.TextSectionSkills{
-    font-size: 1.3rem;
-
-    width: 100%;
-    background-color: #141a22;
+#codingPageContent .TextSectionSkills{
     display: flex;
-
     align-items: center;
+    font-size: 1rem;
+    background-color: #141a22;
 
     overflow-x: auto;
-    height: 80px;
+    padding: 20px 10px;
+
 }
 
-.TextSectionSkills h4{
+#codingPageContent .TextSectionSkills h2{
+
     margin: 0px 8px;
     color:#388bfd;
-
     white-space: nowrap;
 
     background-color: #0f376f;
-    padding: 3px 5px;
+    padding: 5px 20px;
 
     border-radius: 20px;
 }
 
-
-.PictureSection{
+#codingPageContent .PictureSection{
     display: flex;
     flex: 1;
 
@@ -81,22 +77,21 @@
     background-repeat: no-repeat;
 }
 
-.PictureSection img{
-    display: flex;
-    margin: auto;
-    width: calc(100% / 1.4);
-    max-width: 350px;
-}
+#codingPageContent .PictureSection img{
+    height: auto;
+    max-height: 400px;
+    width: auto;
+    max-width: 100%;
+ }
 
-.PictureSectionNavigation{
+#codingPageContent .PictureSectionNavigation{
     display: flex;
     flex-direction: row;
     position: absolute;
     z-index: 1;
-
 }
 
-.PictureSectionNavigation input{
+#codingPageContent .PictureSectionNavigation input{
     height: 15px;
     width: 15px;
     margin-bottom: 10px;

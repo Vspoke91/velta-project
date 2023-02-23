@@ -20,7 +20,7 @@ function ArtWork() {
   
     <div className='main'>
       <Header logo_Name={'Velta Projects'}/>
-      <div className='mainContent'>
+      <div className='mainContent' id='artWorkPageContent'>
         <ul>
           {imageElement}
         </ul>

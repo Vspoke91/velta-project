@@ -1,23 +1,23 @@
 .Navigation{
     background-color: #12161e;
-    font-size: 20px;
+
     width: 250px;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+    padding-top: 60px;
 
     position: fixed;
     height: 100vh;
-    margin-top: 60px;
 }
 
 .Navigation button {
 
     font-size: 1.3rem;
+    font-weight: bold;
 
     background-color: transparent;
     border: none;
-
     white-space: nowrap;
     width: 100%;
     color: #388bfd; 
@@ -50,6 +50,7 @@
 
 
 @media(max-width: 900px){
+    
     .Navigation{
         visibility: hidden;
         opacity: 0;
@@ -57,8 +58,8 @@
         transition: .2s;
     }
 
-    .Content{
-        padding-left: 0px;
+    .mainContent{
+        padding-left: 0 !important;
     }
 }
 
