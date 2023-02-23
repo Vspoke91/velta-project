@@ -19,7 +19,7 @@ function Home() {
   return (
     <divc className='main'>
       <Header logo_Name={'Velta Projects'}/>
-      <div className='mainContent'>
+      <div className='mainContent' id='HomePageContent'>
         <div className='contentTittle'>
           <ul>{imageElement}</ul>
           <h1>Velta Projects</h1>

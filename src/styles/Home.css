@@ -1,26 +1,26 @@
-.mainContentHome{    
-    display: block;
+#HomePageContent {    
     padding-top: 60px;
     margin: auto;
     color: white;
     text-align: center;
 }
 
-.contentTittle{
+#HomePageContent .contentTittle{
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 
     height: clamp(300px, 21vw, 350px);
     background-color: rgba(0, 0, 0, 0.178);
     background-blend-mode: multiply;
 }
 
-.contentTittle ul{
+#HomePageContent .contentTittle ul{
+    display: contents;
     height: inherit;
     flex-direction: column;
-    overflow: hidden;
     align-content: center;
 
     width: 100%;
@@ -29,15 +29,15 @@
     list-style-type: none;
 }
 
-.contentTittle li{
+#HomePageContent .contentTittle li{
     height: inherit;
 }
 
-.contentTittle img{
+#HomePageContent .contentTittle img{
     height: inherit;
 }
 
-.contentTittle h1{
+#HomePageContent .contentTittle h1{
     font-size: clamp(25px, 10vw, 65px);
     position: absolute;
     color: #f7f9ff;
@@ -47,7 +47,7 @@
     padding: 3px 10px;
 }
 
-.contentItem {
+#HomePageContent .contentItem {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -61,32 +61,32 @@
     background-size: 0;
 }
 
-.invertFlex{
+#HomePageContent .invertFlex{
     flex-direction: row-reverse;
 }
 
-.invertFlex .itemText{
+#HomePageContent .invertFlex .itemText{
     flex: 0.5;
     margin-left: 10vh;
     margin-right: 0;
 }
 
-.itemText{
+#HomePageContent .itemText{
     flex: 0.5;
     margin-right: 10vh;
     margin-left: 0vh;
     padding-bottom: 4vh;
 }
 
-.itemText h1{
+#HomePageContent .itemText h1{
     font-size: 2.5rem;
 }
 
-.itemText h2{
+#HomePageContent .itemText h2{
     font-size: 1.3rem;
 }
 
-.itemText a{
+#HomePageContent .itemText a{
     font-size: 1.5rem;
     color: rgb(173, 173, 173);
     text-decoration: none;
@@ -96,37 +96,37 @@
     border-bottom-style: solid;
 }
 
-.itemText a:hover, .itemText a:active{
+#HomePageContent .itemText a:hover, .itemText a:active{
     color: white;
     font-size: 1.55rem;
     transition: 0.7s;
 }
 
-.itemImages{
+#HomePageContent .itemImages{
     flex: 0.5;
     margin: 0;
     padding: 0;
 }
 
-.itemImages img{
+#HomePageContent .itemImages img{
     width: 100%;
 }
 
 @media(max-width: 1000px){
-    .itemImages{
+    #HomePageContent .itemImages{
         display: none;
     }
 
-    .itemText{
+    #HomePageContent .itemText{
         margin: auto;
     }
 
-    .invertFlex .itemText{
+    #HomePageContent .invertFlex .itemText{
         flex: 0.5;
         margin: auto;
     }
 
-    .contentItem {
+    #HomePageContent .contentItem {
         display: block;
         
         margin: 150px 0;
