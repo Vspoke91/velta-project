@@ -50,6 +50,7 @@
 
 
 @media(max-width: 900px){
+    
     .Navigation{
         visibility: hidden;
         opacity: 0;
@@ -58,7 +59,7 @@
     }
 
     .mainContent{
-        padding-left: 0;
+        padding-left: 0 !important;
     }
 }
 
