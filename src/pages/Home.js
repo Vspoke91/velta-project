@@ -24,7 +24,7 @@ function Home() {
           <ul>{imageElement}</ul>
           <h1>Velta Projects</h1>
         </div>
-        
+
         <div className='contentItem' style={{backgroundImage: "url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/800px-Image_created_with_a_mobile_phone.png)"}}>
           <div className='itemText'>
             <h1>Coding</h1>
@@ -47,7 +47,10 @@ function Home() {
             </div>
         </div>
         
-        {/* <div className='contentMyLife'>My life section</div> */}
+        <div className='contentMyLife'>
+          My life section
+          <i class="fa-brands fa-github"></i>
+        </div>
       </div>
     </divc>
   )
