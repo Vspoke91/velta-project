@@ -1,4 +1,5 @@
 import React from 'react'
+import { TypeAnimation } from 'react-type-animation';
 import Header from '../components/Header';
 import '../styles/Home.css'
  
@@ -22,7 +23,18 @@ function Home() {
       <div className='mainContent' id='HomePageContent'>
         <div className='contentTittle'>
           <ul>{imageElement}</ul>
-          <h1>Velta Projects</h1>
+          <TypeAnimation
+            sequence={[
+              'Welcome',
+              2000,
+              'Velta-Projects',
+              7000  
+            ]}
+            wrapper="h1"
+            cursor={false}
+            repeat={Infinity}
+            omitDeletionAnimation={true}
+          />
         </div>
 
         <div className='contentItem' style={{backgroundImage: "url(images/Coding/Survival_1.png)"}}>
