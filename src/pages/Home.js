@@ -25,7 +25,7 @@ function Home() {
           <h1>Velta Projects</h1>
         </div>
 
-        <div className='contentItem' style={{backgroundImage: "url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/800px-Image_created_with_a_mobile_phone.png)"}}>
+        <div className='contentItem' style={{backgroundImage: "url(images/Coding/Survival_1.png)"}}>
           <div className='itemText'>
             <h1>Coding</h1>
             <h2>Coding is a section made to show all the projects I have work throughout my developer journey<br/><br/>Games, Destop Apps, Mobile apps</h2>
@@ -36,7 +36,7 @@ function Home() {
           </div>
         </div>
 
-        <div className='contentItem invertFlex' style={{backgroundImage: "url(https://media.istockphoto.com/id/825383494/photo/business-man-pushing-large-stone-up-to-hill-business-heavy-tasks-and-problems-concept.jpg?s=612x612&w=0&k=20&c=wtqvbQ6OIHitRVDPTtoT_1HKUAOgyqa7YzzTMXqGRaQ=)"}}>
+        <div className='contentItem invertFlex' style={{backgroundImage: "url(images/ArtWork/MoonFlower.png)"}}>
           <div className='itemText'>
               <h1>Art Work</h1>
               <h2>My creative side were I created drawings into digital art<br/><br/>PhotoShop, GIMP</h2>
