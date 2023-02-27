@@ -30,7 +30,7 @@ function SelectorSwitch(){
 function Header({logo_Name}) {
   return (
     <header className="App-header">
-        <a className="App-logo" href='index'>
+        <a className="App-logo" href='/'>
             <span>{logo_Name}</span>
         </a>
         <nav>
