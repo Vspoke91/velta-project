@@ -39,7 +39,8 @@ const items =
         [
             "/images/Coding/RAT_1.png", 
             "/images/Coding/RAT_2.png", 
-            "/images/Coding/RAT_3.png"
+            "/images/Coding/RAT_3.png",
+            "/images/Coding/RAT_4.png"
         ]
     },
     {
