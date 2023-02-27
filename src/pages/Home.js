@@ -47,10 +47,10 @@ function Home() {
             </div>
         </div>
         
-        <div className='contentMyLife'>
+        {/* <div className='contentMyLife'>
           My life section
           <i class="fa-brands fa-github"></i>
-        </div>
+        </div> */}
       </div>
     </divc>
   )
