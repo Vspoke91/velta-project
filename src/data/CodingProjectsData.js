@@ -37,9 +37,35 @@ const items =
         skills: ["Java", "JavaFX", "Android Studio", "Network"],
         images: 
         [
-            "/images/Coding/OrderTracker_1.png", 
-            "/images/Coding/OrderTracker_2.png", 
-            "/images/Coding/OrderTracker_3.png"
+            "/images/Coding/RAT_1.png", 
+            "/images/Coding/RAT_2.png", 
+            "/images/Coding/RAT_3.png"
+        ]
+    },
+    {
+        tittle: "Vicnet-Project",
+        description: 
+            "Vicnet-Project.com is the first website I created.\n\n"+
+            "It was created simple and easy to read. Created to show all my Programs and ArtWork, I Launch using a Rasberry PI from my home internet."
+        ,
+        skills: ["HTML", "JavaScript", "NodeJS", "Rasberri PI"],
+        images: 
+        [
+            "/images/Coding/Vicnet_1.png", 
+            "/images/Coding/Vicnet_2.png", 
+            "/images/Coding/Vicnet_3.png"
+        ]
+    },
+    {
+        tittle: "Infinite Survival",
+        description: 
+            "The first Survival Game I created.\n\n"+
+            "This game had Prosedual generation using noise for its terrain. You could explore the map without limits"
+        ,
+        skills: ["C#", "Unity", "Perlin Noise"],
+        images: 
+        [
+            "/images/Coding/Survival_1.png"
         ]
     },
 ]
