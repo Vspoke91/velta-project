@@ -25,10 +25,10 @@ function Home() {
           <ul>{imageElement}</ul>
           <TypeAnimation
             sequence={[
-              'Welcome',
-              2000,
               'Velta-Projects',
-              7000  
+              10000,
+              'Welcome',
+              1000 
             ]}
             wrapper="h1"
             cursor={false}
