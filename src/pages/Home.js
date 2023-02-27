@@ -32,7 +32,7 @@ function Home() {
             <a href='/Coding'>Go to section</a>
           </div>
           <div className='itemImages'>
-            <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/800px-Image_created_with_a_mobile_phone.png'/>
+            <img src='images/Coding/Survival_1.png'/>
           </div>
         </div>
 
@@ -43,7 +43,7 @@ function Home() {
               <a href='/ArtWork'>Go to section</a>
             </div>
             <div className='itemImages'>
-              <img src='https://media.istockphoto.com/id/825383494/photo/business-man-pushing-large-stone-up-to-hill-business-heavy-tasks-and-problems-concept.jpg?s=612x612&w=0&k=20&c=wtqvbQ6OIHitRVDPTtoT_1HKUAOgyqa7YzzTMXqGRaQ='/>
+              <img src='images/ArtWork/MoonFlower.png'/>
             </div>
         </div>
         
