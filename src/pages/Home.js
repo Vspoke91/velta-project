@@ -98,23 +98,23 @@ function Home() {
         </motion.div>
 
         <div className='contentItem' style={{backgroundImage: "url(images/Coding/Survival_1.png)"}}>
-          <motion.div className='itemText' variants={rightFadeInAnimation} initial = "hidden" whileInView = "show" viewport = {{once:true, amount:0.5}}>
+          <motion.div className='itemText' variants={rightFadeInAnimation} initial = "hidden" whileInView = "show" viewport = {{once:true, amount:0.4}}>
             <h1>Coding</h1>
             <h2>Coding is a section made to show all the projects I have work throughout my developer journey<br/><br/>Games, Destop Apps, Mobile apps</h2>
             <a href='/Coding'>Go to section</a>
           </motion.div>
-          <motion.div className='itemImages' variants={leftFadeInAnimation} initial = "hidden" whileInView = "show" viewport = {{once:true, amount:0.5}}>
+          <motion.div className='itemImages' variants={leftFadeInAnimation} initial = "hidden" whileInView = "show" viewport = {{once:true, amount:0.4}}>
             <img src='images/Coding/Survival_1.png'/>
           </motion.div>
         </div>
 
         <div className='contentItem invertFlex' style={{backgroundImage: "url(images/ArtWork/MoonFlower.png)"}}>
-          <motion.div className='itemText' variants={leftFadeInAnimation} initial = "hidden" whileInView = "show" viewport = {{once:true, amount:0.5}}>
+          <motion.div className='itemText' variants={leftFadeInAnimation} initial = "hidden" whileInView = "show" viewport = {{once:true, amount:0.4}}>
               <h1>Art Work</h1>
               <h2>My creative side were I created drawings into digital art<br/><br/>PhotoShop, GIMP</h2>
               <a href='/ArtWork'>Go to section</a>
             </motion.div>
-            <motion.div className='itemImages' variants={rightFadeInAnimation} initial = "hidden" whileInView = "show" viewport = {{once:true, amount:0.5}}>
+            <motion.div className='itemImages' variants={rightFadeInAnimation} initial = "hidden" whileInView = "show" viewport = {{once:true, amount:0.4}}>
               <img src='images/ArtWork/MoonFlower.png'/>
             </motion.div>
         </div>
