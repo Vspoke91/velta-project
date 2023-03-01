@@ -87,20 +87,19 @@
     font-size: 1.3rem;
 }
 
-#HomePageContent .itemText a{
+#HomePageContent .itemText a button{
     font-size: 1.5rem;
-    color: rgb(173, 173, 173);
-    text-decoration: none;
-    
+    color: #adadad;
+    text-decoration: none; 
+
+    padding: 0;
+    border: none;
+
     border-color: #3396e2;
     border-bottom-width: 3px;
     border-bottom-style: solid;
-}
-
-#HomePageContent .itemText a:hover, .itemText a:active{
-    color: white;
-    font-size: 1.55rem;
-    transition: 0.7s;
+    
+    background-color: transparent;
 }
 
 #HomePageContent .itemImages{

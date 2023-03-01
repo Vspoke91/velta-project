@@ -80,6 +80,16 @@ function Home() {
     },
   }
 
+  const buttonAnimation = {
+    show: {
+      scale: 1.05,
+      color: "white",
+      transition: {
+        duration: 0.6,
+      }
+    }
+  }
+
   return (
     <div className='main'>
       <Header logo_Name={'Velta Projects'}/>
@@ -101,7 +111,7 @@ function Home() {
           <motion.div className='itemText' variants={rightFadeInAnimation} initial = "hidden" whileInView = "show" viewport = {{once:true, amount:0.4}}>
             <h1>Coding</h1>
             <h2>Coding is a section made to show all the projects I have work throughout my developer journey<br/><br/>Games, Destop Apps, Mobile apps</h2>
-            <a href='/Coding'>Go to section</a>
+            <a href='/Coding'><motion.button variants={buttonAnimation} whileHover = "show">Go to section</motion.button></a>
           </motion.div>
           <motion.div className='itemImages' variants={leftFadeInAnimation} initial = "hidden" whileInView = "show" viewport = {{once:true, amount:0.4}}>
             <img src='images/Coding/Survival_1.png'/>
@@ -112,7 +122,7 @@ function Home() {
           <motion.div className='itemText' variants={leftFadeInAnimation} initial = "hidden" whileInView = "show" viewport = {{once:true, amount:0.4}}>
               <h1>Art Work</h1>
               <h2>My creative side were I created drawings into digital art<br/><br/>PhotoShop, GIMP</h2>
-              <a href='/ArtWork'>Go to section</a>
+              <a href='/ArtWork'><motion.button variants={buttonAnimation} whileHover = "show">Go to section</motion.button></a>
             </motion.div>
             <motion.div className='itemImages' variants={rightFadeInAnimation} initial = "hidden" whileInView = "show" viewport = {{once:true, amount:0.4}}>
               <img src='images/ArtWork/MoonFlower.png'/>
