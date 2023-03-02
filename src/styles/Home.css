@@ -3,6 +3,9 @@
     margin: auto;
     color: white;
     text-align: center;
+
+    overflow: visible;
+    scroll-snap-type: y mandatory;
 }
 
 #HomePageContent .contentTittle{
@@ -52,6 +55,8 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
+
+    scroll-snap-align: start;
 
     padding: 0 10px;
     max-height: 1000px;

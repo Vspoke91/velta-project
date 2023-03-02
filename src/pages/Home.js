@@ -1,141 +1,85 @@
 import React from 'react'
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from "framer-motion"
-import Header from '../components/Header';
 import '../styles/Home.css'
- 
-const images = importAll(require.context('/public/images/ArtWork/', false, /\.(png|jpe?g|svg)$/));
-
-function importAll(r) {
-  let images = [];
-  r.keys().forEach((item, index) => { images[index] = r(item); });
-  return images
-}
+import Animation from "../Utils/FramerAnimations"
+import Header from '../components/Header';
 
 function Home() {
-  
-  let imageElement = []
-
-  Object.values(images).forEach((img, index) => {imageElement[index] = <li><img src={img} alt = {img}/></li>});
-
-  const rightFadeInAnimation = {
-    hidden: { 
-      x: -100,
-      opacity: 0,
-    },
-    show: {
-      x: 0,
-      opacity: 1,
-      transition: {
-        ease: "easeOut", 
-        duration: 2,
-        opacity: { duration: 1.5},
-      }
-    }
-  }
-
-  const leftFadeInAnimation = {
-    hidden: { 
-      x: 100,
-      opacity: 0,
-    },
-    show: {
-      x: 0,
-      opacity: 1,
-      transition: {
-        ease: "easeOut", 
-        duration: 2,
-        opacity: { duration: 1.5},
-      }
-    }
-  }
-
-  const topFadeInAnimation = {
-    hidden: { 
-      y: -100,
-      opacity: 0,
-    },
-    show: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        ease: "easeOut", 
-        duration: 2,
-        opacity: { duration: 1.5 },
-      }
-    }
-  }
-
-  const popInAnimation = {
-    hidden: { 
-      opacity: 0,
-    },
-    show: {
-      opacity: 1,
-      transition: {
-        ease: "easeOut", 
-        duration: 2,
-        opacity: { duration: 1.5 },
-      },
-    },
-  }
-
-  const buttonAnimation = {
-    show: {
-      scale: 1.05,
-      color: "white",
-      transition: {
-        duration: 0.6,
-      }
-    }
-  }
 
   return (
     <div className='main'>
       <Header logo_Name={'Velta Projects'}/>
       <div className='mainContent' id='HomePageContent'>
-        <motion.div className='contentTittle' variants={topFadeInAnimation} initial = "hidden" whileInView = "show" viewport = {{once:true}}>
-          <ul>{imageElement}</ul>
-          <TypeAnimation
-            sequence={[
-              1500,
-              'Velta-Projects',
-            ]}
-            speed = {8}
-            wrapper="h1"
-            cursor={false}
-          />
-        </motion.div>
-
-        <div className='contentItem' style={{backgroundImage: "url(images/Coding/Survival_1.png)"}}>
-          <motion.div className='itemText' variants={rightFadeInAnimation} initial = "hidden" whileInView = "show" viewport = {{once:true, amount:0.4}}>
-            <h1>Coding</h1>
-            <h2>Coding is a section made to show all the projects I have work throughout my developer journey<br/><br/>Games, Destop Apps, Mobile apps</h2>
-            <a href='/Coding'><motion.button variants={buttonAnimation} whileHover = "show">Go to section</motion.button></a>
-          </motion.div>
-          <motion.div className='itemImages' variants={leftFadeInAnimation} initial = "hidden" whileInView = "show" viewport = {{once:true, amount:0.4}}>
-            <img src='images/Coding/Survival_1.png'/>
-          </motion.div>
-        </div>
-
-        <div className='contentItem invertFlex' style={{backgroundImage: "url(images/ArtWork/MoonFlower.png)"}}>
-          <motion.div className='itemText' variants={leftFadeInAnimation} initial = "hidden" whileInView = "show" viewport = {{once:true, amount:0.4}}>
-              <h1>Art Work</h1>
-              <h2>My creative side were I created drawings into digital art<br/><br/>PhotoShop, GIMP</h2>
-              <a href='/ArtWork'><motion.button variants={buttonAnimation} whileHover = "show">Go to section</motion.button></a>
-            </motion.div>
-            <motion.div className='itemImages' variants={rightFadeInAnimation} initial = "hidden" whileInView = "show" viewport = {{once:true, amount:0.4}}>
-              <img src='images/ArtWork/MoonFlower.png'/>
-            </motion.div>
-        </div>
-        
-        {/* <div className='contentMyLife'>
-          My life section
-          <i class="fa-brands fa-github"></i>
-        </div> */}
+        <TittleSection/>
+        <CodingSection image="images/Coding/Survival_1.png"/>
+        <ArtWorkSection image="images/ArtWork/MoonFlower.png"/>
       </div>
     </div>
   )
+}
+
+const TittleSection = () => {
+
+  function importAll(list) {
+
+    let img = [];
+
+    list.keys().forEach((item, index) => { img[index] = list(item); });
+
+    return img;
+  }
+
+  let images = importAll(require.context('/public/images/ArtWork/', false, /\.(png|jpe?g|svg)$/));
+
+  let imageElement = []
+
+  Object.values(images).forEach((img, index) => {imageElement[index] = <li><img src={img} alt = {img}/></li>});
+
+  return(
+    <motion.div className='contentTittle' variants={Animation.fadeIn(0, 100)} initial = "hidden" whileInView = "show" viewport = {{once:true}}>
+      <ul>{imageElement}</ul>
+      <TypeAnimation sequence={[ 1500, 'Velta-Projects', ]} speed = {8} wrapper="h1" cursor={false} />
+    </motion.div>
+  )
+}
+
+const CodingSection = ({image}) => {
+
+  return(
+    <div className='contentItem' style={{backgroundImage: "url("+{image}+")"}}>
+
+      <motion.div className='itemText' variants={Animation.fadeIn(-100)} initial = "hidden" whileInView = "show" viewport = {{once:true, amount:0.4}}>
+        <h1>Coding</h1>
+        <h2>Coding is a section made to show all the projects I have work throughout my developer journey<br/><br/>Games, Destop Apps, Mobile apps</h2>
+        <a href='/Coding'><motion.button variants={Animation.resize(1.05, "white")} whileHover = "show">Go to section</motion.button></a>
+      </motion.div>
+
+      <motion.div className='itemImages' variants={Animation.fadeIn(100)} initial = "hidden" whileInView = "show" viewport = {{once:true, amount:0.4}}>
+        <img src={image}/>
+      </motion.div>
+
+    </div>
+  );
+}
+
+const ArtWorkSection = ({image}) => {
+
+  return(
+    <div className='contentItem invertFlex' style={{backgroundImage: "url("+image+")"}}>
+
+      <motion.div className='itemText' variants={Animation.fadeIn(100)} initial = "hidden" whileInView = "show" viewport = {{once:true, amount:0.4}}>
+        <h1>Art Work</h1>
+        <h2>My creative side were I created drawings into digital art<br/><br/>PhotoShop, GIMP</h2>
+        <a href='/ArtWork'><motion.button variants={Animation.resize(1.05, "white")} whileHover = "show">Go to section</motion.button></a>
+      </motion.div>
+
+      <motion.div className='itemImages' variants={Animation.fadeIn(-100)} initial = "hidden" whileInView = "show" viewport = {{once:true, amount:0.4}}>
+        <img src={image}/>
+      </motion.div>
+
+    </div>
+  );
 }
 
 export default Home
