@@ -15,7 +15,7 @@
     align-items: center;
     overflow: hidden;
 
-    height: clamp(300px, 21vw, 350px);
+    height: clamp(350px, 30vw, 500px);
     background-color: rgba(0, 0, 0, 0.178);
     background-blend-mode: multiply;
 }
@@ -45,7 +45,7 @@
     position: absolute;
     color: #f7f9ff;
     z-index: 1;
-
+    
     background-color: #00000020;
     padding: 3px 10px;
 }

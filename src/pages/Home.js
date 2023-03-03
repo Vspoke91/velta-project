@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState } from "react";
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from "framer-motion"
 import '../styles/Home.css'
@@ -29,9 +30,7 @@ const TittleSection = () => {
 
     return img;
   }
-
   let images = importAll(require.context('/public/images/ArtWork/', false, /\.(png|jpe?g|svg)$/));
-
   let imageElement = []
 
   Object.values(images).forEach((img, index) => {imageElement[index] = <li><img src={img} alt = {img}/></li>});
@@ -39,15 +38,14 @@ const TittleSection = () => {
   return(
     <motion.div className='contentTittle' variants={Animation.fadeIn(0, 100)} initial = "hidden" whileInView = "show" viewport = {{once:true}}>
       <ul>{imageElement}</ul>
-      <TypeAnimation sequence={[ 1500, 'Velta-Projects', ]} speed = {8} wrapper="h1" cursor={false} />
+      <motion.h1 className='unselectable' variants={Animation.fadeOut(0.4)} whileHover = "fade">Velta-Projects</motion.h1>
     </motion.div>
   )
 }
 
 const CodingSection = ({image}) => {
-
   return(
-    <div className='contentItem' style={{backgroundImage: "url("+{image}+")"}}>
+    <div className='contentItem' style={{backgroundImage: "url("+image+")"}}>
 
       <motion.div className='itemText' variants={Animation.fadeIn(-100)} initial = "hidden" whileInView = "show" viewport = {{once:true, amount:0.4}}>
         <h1>Coding</h1>
