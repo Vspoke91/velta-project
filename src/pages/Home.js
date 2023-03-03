@@ -1,7 +1,6 @@
 import React from 'react'
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
-import { TypeAnimation } from 'react-type-animation';
 import { motion } from "framer-motion"
 import '../styles/Home.css'
 import Animation from "../Utils/FramerAnimations"
@@ -41,6 +40,7 @@ const TittleSection = () => {
      pagination: false,  
      perPage: 3, 
      type: "loop", 
+     drag: "free",
      autoScroll: {
       speed: 0.4, 
       pauseOnHover: false
@@ -50,9 +50,7 @@ const TittleSection = () => {
 
   return(
     <motion.div className='contentTittle' variants={Animation.fadeIn(0, 100)} initial = "hidden" whileInView = "show" viewport = {{once:true}}>
-
       <Splide id='HomeTittleSlide' options={slideOptions} extensions={{ AutoScroll }}>{imageElement}</Splide>
-
       <motion.h1 className='unselectable' variants={Animation.fadeOut(0.4)} whileHover = "fade">Velta-Projects</motion.h1>
     </motion.div>
   )
