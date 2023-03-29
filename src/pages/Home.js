@@ -86,7 +86,7 @@ const ArtWorkSection = ({ image }) => {
       </motion.div>
 
       <motion.div className='itemImages' variants={Animation.fadeIn(-100)} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.4 }}>
-        <img src={image} />
+        <img src={image} alt="Error" />
       </motion.div>
 
     </div>
