@@ -7,10 +7,10 @@
 }
 
 #artWorkPageContent ul::after {
-    content:"";
+    content: "";
     flex-grow: 10;
 }
-  
+
 #artWorkPageContent li {
     height: 40vh;
     flex-grow: 1;

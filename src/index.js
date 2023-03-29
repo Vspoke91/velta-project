@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { createBrowserRouter, RouterProvider} from 'react-router-dom'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './styles/index.css';
 import HomePage from './pages/Home';
 import CodingPage from './pages/Coding';
@@ -13,16 +13,16 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <HomePage/>,
+    element: <HomePage />,
     errorElement: <ErrorPage />,
   },
   {
     path: "/Coding",
-    element: <CodingPage/>,
+    element: <CodingPage />,
   },
   {
     path: "/ArtWork",
-    element: <ArtWorkPage/>,
+    element: <ArtWorkPage />,
   },
 ]);
 

@@ -1,4 +1,4 @@
-#HomePageContent {    
+#HomePageContent {
     padding-top: 60px;
     margin: auto;
     color: white;
@@ -8,7 +8,7 @@
     scroll-snap-type: y mandatory;
 }
 
-#HomePageContent .contentTittle{
+#HomePageContent .contentTittle {
     position: relative;
     display: flex;
     justify-content: center;
@@ -20,38 +20,39 @@
     background-blend-mode: multiply;
 }
 
-#HomeTittleSlide{
+#HomeTittleSlide {
     height: 100%;
     width: 100vh;
 }
 
-#HomeTittleSlide .splide__arrows{
+#HomeTittleSlide .splide__arrows {
     display: none;
 }
 
-#HomeTittleSlide .splide__track{
+#HomeTittleSlide .splide__track {
     height: inherit;
 }
 
-#HomeTittleSlide .splide__list{
+#HomeTittleSlide .splide__list {
     height: inherit;
     display: flex;
     padding: 0;
     margin: 0;
 }
 
-#HomeTittleSlide .splide__slide, #HomeTittleSlide .splide__slide img{
+#HomeTittleSlide .splide__slide,
+#HomeTittleSlide .splide__slide img {
     height: inherit;
     width: auto !important;
     margin-right: 0 !important;
 }
 
 
-#HomeTittleSlide .splide__pagination{
+#HomeTittleSlide .splide__pagination {
     display: none;
 }
 
-#HomePageContentx .contentTittle ul{
+#HomePageContentx .contentTittle ul {
     display: contents;
     height: inherit;
     flex-direction: column;
@@ -63,15 +64,15 @@
     list-style-type: none;
 }
 
-#HomePageContentx .contentTittle li{
+#HomePageContentx .contentTittle li {
     height: inherit;
 }
 
-#HomePageContentx .contentTittle img{
+#HomePageContentx .contentTittle img {
     height: inherit;
 }
 
-#HomePageContent .contentTittle h1{
+#HomePageContent .contentTittle h1 {
     font-size: clamp(25px, 10vw, 65px);
     position: absolute;
     color: #f7f9ff;
@@ -97,35 +98,35 @@
     background-size: 0;
 }
 
-#HomePageContent .invertFlex{
+#HomePageContent .invertFlex {
     flex-direction: row-reverse;
 }
 
-#HomePageContent .invertFlex .itemText{
+#HomePageContent .invertFlex .itemText {
     flex: 0.5;
     margin-left: 10vh;
     margin-right: 0;
 }
 
-#HomePageContent .itemText{
+#HomePageContent .itemText {
     flex: 0.5;
     margin-right: 10vh;
     margin-left: 0vh;
     padding-bottom: 4vh;
 }
 
-#HomePageContent .itemText h1{
+#HomePageContent .itemText h1 {
     font-size: 2.5rem;
 }
 
-#HomePageContent .itemText h2{
+#HomePageContent .itemText h2 {
     font-size: 1.3rem;
 }
 
-#HomePageContent .itemText a button{
+#HomePageContent .itemText a button {
     font-size: 1.5rem;
     color: #adadad;
-    text-decoration: none; 
+    text-decoration: none;
 
     padding: 0;
     border: none;
@@ -133,37 +134,37 @@
     border-color: #3396e2;
     border-bottom-width: 3px;
     border-bottom-style: solid;
-    
+
     background-color: transparent;
 }
 
-#HomePageContent .itemImages{
+#HomePageContent .itemImages {
     flex: 0.5;
     margin: 0;
     padding: 0;
 }
 
-#HomePageContent .itemImages img{
+#HomePageContent .itemImages img {
     width: 100%;
 }
 
-@media(max-width: 1000px){
-    #HomePageContent .itemImages{
+@media(max-width: 1000px) {
+    #HomePageContent .itemImages {
         display: none;
     }
 
-    #HomePageContent .itemText{
+    #HomePageContent .itemText {
         margin: auto;
     }
 
-    #HomePageContent .invertFlex .itemText{
+    #HomePageContent .invertFlex .itemText {
         flex: 0.5;
         margin: auto;
     }
 
     #HomePageContent .contentItem {
         display: block;
-        
+
         margin: 150px 0;
 
         padding-top: 0.1vh;
@@ -182,11 +183,11 @@
 }
 
 @keyframes example {
-    0%   {  
+    0% {
         background-color: #000000;
     }
 
-    100% {  
+    100% {
         background-color: #383838;
     }
 }
