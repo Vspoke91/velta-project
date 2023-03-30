@@ -14,12 +14,12 @@ function ArtWork() {
 
   let imageElement = []
 
-  Object.values(images).forEach((img, index) => {imageElement[index] = <li><img src={img} alt = {img}/></li>});
+  Object.values(images).forEach((img, index) => { imageElement[index] = <li><img src={img} alt={img} /></li> });
 
   return (
-  
+
     <div className='main'>
-      <Header logo_Name={'Velta Projects'}/>
+      <Header logo_Name={'Velta Projects'} />
       <div className='mainContent' id='artWorkPageContent'>
         <ul>
           {imageElement}

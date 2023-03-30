@@ -12,7 +12,7 @@
   z-index: 2;
 }
 
-.App-logo{
+.App-logo {
   display: flex;
   color: white;
   font-size: 1.5rem;
@@ -23,16 +23,16 @@
   text-decoration: none;
 }
 
-.App-logo span{
+.App-logo span {
   white-space: nowrap;
 }
 
-.App-logo img{
+.App-logo img {
   padding-right: 15px;
   height: 35px;
 }
 
-.App-header nav{
+.App-header nav {
   display: flex;
   width: 100%;
   height: 100%;
@@ -42,7 +42,7 @@
   padding: 0;
 }
 
-.App-header nav a{
+.App-header nav a {
   font-size: 1.2rem;
   display: flex;
   height: inherit;
@@ -57,50 +57,51 @@
   box-sizing: border-box;
 }
 
-.App-header nav a.active, .App-header nav a:hover{
+.App-header nav a.active,
+.App-header nav a:hover {
   color: #a5abb9;
   transition: .5s;
 }
 
-.Header-Selected{  
+.Header-Selected {
   border-color: #3396e2;
   border-bottom-width: 4px;
   border-bottom-style: solid;
 }
 
-@media(max-width: 500px){
+@media(max-width: 500px) {
 
-  .App-logo{
+  .App-logo {
     display: none;
   }
 
-  .App-header nav{
+  .App-header nav {
     justify-content: center;
   }
-  
-  .App-header{
+
+  .App-header {
     padding: 0px;
   }
 
 }
 
-@media(max-width: 600px){
+@media(max-width: 600px) {
 
-  .App-logo span{
+  .App-logo span {
     display: none;
   }
 
-  .App-header nav{
+  .App-header nav {
     display: flex;
     width: 100%;
     height: 100%;
-  
+
     margin-left: calc(100% / 10);
   }
 }
 
-@media(max-width: 260px){
-  .App-header nav{
+@media(max-width: 260px) {
+  .App-header nav {
     margin: 0;
     justify-content: flex-start;
   }
