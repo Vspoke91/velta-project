@@ -4,60 +4,68 @@ import SideBarNavigation from '../../components/sidebarNavigation/SideBarNavigat
 import ContentData from '../../data/CodingProjectsData'
 
 function Coding() {
-  const contentElements = new Array(ContentData.length)
+  const projectsArray = []
 
   for (let i = 0; i < ContentData.length; i++) {
-    contentElements[i] = createContentElement(ContentData[i])
+    projectsArray.push(getNewProjectElement(ContentData[i], i))
   }
 
   return (
     <div className='main'>
       <Header logoName='Velta Projects' />
       <SideBarNavigation contentItems={ContentData} />
+
       <div className='mainContent' id='codingPageContent'>
-        {contentElements}
+        {projectsArray}
       </div>
+
     </div>
   )
 }
 
-function createContentElement(data) {
-  const Tittle = data.tittle
-  const Description = data.description
-
-  const SkillsElements = new Array(data.skills.length)
+function getNewProjectElement(data, index) {
+  const tittle = data.tittle
+  const description = data.description
+  const skillsElements = []
+  const imageElements = []
 
   for (let i = 0; i < data.skills.length; i++) {
-    SkillsElements[i] = <h2>{data.skills[i]}</h2>
+    skillsElements.push(<h2 key={i}>{data.skills[i]}</h2>)
   }
 
-  const ImageElements = new Array(data.images.length)
-
   for (let i = 0; i < data.images.length; i++) {
-    ImageElements[i] = <input id={'pictureInput_' + Tittle + '_' + i} type='radio' name={'picture_' + Tittle} onClick={() => setTargetPicture(data.images[i])} checked />
+    imageElements.push(
+      <input
+        key={i}
+        id={'pictureInput_' + tittle + '_' + i}
+        type='radio'
+        name={'picture_' + tittle}
+        onClick={() => setTargetPicture(data.images[i])}
+        checked
+      />)
   }
 
   function setTargetPicture(image) {
     const imgUrl = new URL('../..' + image, import.meta.url).pathname
-    document.getElementById(Tittle + '_Picture').src = imgUrl
-    document.getElementById(Tittle + '_Picture').alt = imgUrl
-    document.getElementById(Tittle + '_PictureBackground').style.backgroundImage = 'url(' + imgUrl + ')'
+    document.getElementById(tittle + '_Picture').src = imgUrl
+    document.getElementById(tittle + '_Picture').alt = imgUrl
+    document.getElementById(tittle + '_PictureBackground').style.backgroundImage = 'url(' + imgUrl + ')'
   }
 
   return (
-    <div className='ContentItem' id={Tittle}>
+    <div className='ContentItem' id={tittle} key={index}>
       <div className='TextSection'>
-        <h1 className='TextSectionTittle'>{Tittle}</h1>
-        <p className='TextSectionDescription'>{Description}</p>
+        <h1 className='TextSectionTittle'>{tittle}</h1>
+        <p className='TextSectionDescription'>{description}</p>
         <div className='TextSectionSkills'>
-          {SkillsElements}
+          {skillsElements}
         </div>
       </div>
-      <div className='PictureSection' id={Tittle + '_PictureBackground'} style={{ backgroundImage: 'url(' + data.images[data.images.length - 1] + ')' }}>
+      <div className='PictureSection' id={tittle + '_PictureBackground'} style={{ backgroundImage: 'url(' + new URL('../..' + data.images[data.images.length - 1], import.meta.url).pathname + ')' }}>
         <div className='PictureSectionNavigation'>
-          {ImageElements}
+          {imageElements}
         </div>
-        <img id={Tittle + '_Picture'} height='250px' src={data.images[data.images.length - 1]} alt={data.images[data.images.length - 1]} />
+        <img id={tittle + '_Picture'} height='250px' src={new URL('../..' + data.images[data.images.length - 1], import.meta.url).pathname} alt={new URL('../..' + data.images[data.images.length - 1], import.meta.url).pathname} />
       </div>
     </div>
   )
