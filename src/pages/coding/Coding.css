@@ -1,5 +1,6 @@
 #codingPageContent {
     display: flex;
+    padding-top: 60px;
     flex-direction: column;
     align-items: center;
     padding-left: 250px;

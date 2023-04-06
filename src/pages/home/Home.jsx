@@ -1,20 +1,20 @@
-import React from 'react'
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import { motion } from "framer-motion"
-import '../styles/Home.css'
-import Animation from "../Utils/FramerAnimations"
-import Header from '../components/Header';
+import './Home.css'
+import Animation from "../../Utils/FramerAnimations"
+import Header from '../../components/header/Header';
 
 function Home() {
 
+
   return (
     <div className='main'>
-      <Header logo_Name={'Velta Projects'} />
+      <Header logoName={'Velta Project'} />
       <div className='mainContent' id='HomePageContent'>
         <TittleSection />
-        <CodingSection image="images/Coding/Survival_1.png" />
-        <ArtWorkSection image="images/ArtWork/MoonFlower.png" />
+        <CodingSection image={new URL('../../images/Coding/Survival_1.png', import.meta.url).pathname} />
+        <ArtWorkSection image={new URL('../../images/ArtWork/MoonFlower.png', import.meta.url).pathname} />
       </div>
     </div>
   )
@@ -22,15 +22,7 @@ function Home() {
 
 const TittleSection = () => {
 
-  function importAll(list) {
-
-    let img = [];
-
-    list.keys().forEach((item, index) => { img[index] = list(item); });
-
-    return img;
-  }
-  let images = importAll(require.context('/public/images/ArtWork/', false, /\.(png|jpe?g|svg)$/));
+  let images = import.meta.glob('../../images/ArtWork/*.(jpg|png|jpeg)', { eager: true, import: 'default' });
   let imageElement = []
 
   Object.values(images).forEach((img, index) => { imageElement[index] = <SplideSlide><img src={img} alt={img} /></SplideSlide> });
