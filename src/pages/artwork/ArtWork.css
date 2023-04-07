@@ -1,3 +1,7 @@
+#artWorkPageContent {
+    padding-top: 60px;
+}
+
 #artWorkPageContent ul {
     display: flex;
     flex-wrap: wrap;
