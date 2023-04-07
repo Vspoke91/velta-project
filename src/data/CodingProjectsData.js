@@ -8,8 +8,9 @@ const items =
       skills: ['C#', 'Unity'],
       images:
         [
-          '/images/Coding/RAT_1.png'
-        ]
+          'VeltaLogo.png'
+        ],
+      defaultImageIndex: 0
     },
     {
       tittle: 'Order Tracker',
@@ -22,7 +23,8 @@ const items =
           '/images/Coding/OrderTracker_1.png',
           '/images/Coding/OrderTracker_2.png',
           '/images/Coding/OrderTracker_3.png'
-        ]
+        ],
+      defaultImageIndex: 0
     },
     {
       tittle: 'Ant-RAT',
@@ -36,7 +38,8 @@ const items =
           '/images/Coding/RAT_2.png',
           '/images/Coding/RAT_3.png',
           '/images/Coding/RAT_4.png'
-        ]
+        ],
+      defaultImageIndex: 0
     },
     {
       tittle: 'Vicnet-Project',
@@ -49,7 +52,8 @@ const items =
           '/images/Coding/Vicnet_1.png',
           '/images/Coding/Vicnet_2.png',
           '/images/Coding/Vicnet_3.png'
-        ]
+        ],
+      defaultImageIndex: 0
     },
     {
       tittle: 'Infinite Survival',
@@ -60,7 +64,8 @@ const items =
       images:
         [
           '/images/Coding/Survival_1.png'
-        ]
+        ],
+      defaultImageIndex: 0
     }
   ]
 

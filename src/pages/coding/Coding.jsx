@@ -1,19 +1,20 @@
 import './Coding.css'
 import Header from '../../components/header/Header'
 import SideBarNavigation from '../../components/sidebarNavigation/SideBarNavigation'
-import ContentData from '../../data/CodingProjectsData'
+import projectsData from '../../data/CodingProjectsData'
+import React from 'react'
 
 function Coding() {
   const projectsArray = []
 
-  for (let i = 0; i < ContentData.length; i++) {
-    projectsArray.push(getNewProjectElement(ContentData[i], i))
+  for (let i = 0; i < projectsData.length; i++) {
+    projectsArray.push(getProjectElement(projectsData[i], i))
   }
 
   return (
     <div className='main'>
-      <Header logoName='Velta Projects' />
-      <SideBarNavigation contentItems={ContentData} />
+      <Header logoName='Velta Project' />
+      <SideBarNavigation contentItems={projectsData} />
 
       <div className='mainContent' id='codingPageContent'>
         {projectsArray}
@@ -23,16 +24,23 @@ function Coding() {
   )
 }
 
-function getNewProjectElement(data, index) {
+function getProjectElement(data, index) {
   const tittle = data.tittle
   const description = data.description
   const skillsElements = []
   const imageElements = []
+  let defaultImageIndex = 0;
 
+  //Check if index is out of bound, if true, keep value at 0
+  if (data.defaultImageIndex < data.images.length)
+    defaultImageIndex = data.defaultImageIndex
+
+  //skills
   for (let i = 0; i < data.skills.length; i++) {
     skillsElements.push(<h2 key={i}>{data.skills[i]}</h2>)
   }
 
+  //images
   for (let i = 0; i < data.images.length; i++) {
     imageElements.push(
       <input
@@ -41,15 +49,14 @@ function getNewProjectElement(data, index) {
         type='radio'
         name={'picture_' + tittle}
         onClick={() => setTargetPicture(data.images[i])}
-        checked
+        defaultChecked={i == defaultImageIndex} //default a check to first element
       />)
   }
 
   function setTargetPicture(image) {
-    const imgUrl = new URL('../..' + image, import.meta.url).pathname
-    document.getElementById(tittle + '_Picture').src = imgUrl
-    document.getElementById(tittle + '_Picture').alt = imgUrl
-    document.getElementById(tittle + '_PictureBackground').style.backgroundImage = 'url(' + imgUrl + ')'
+    document.getElementById(tittle + '_Picture').src = image
+    document.getElementById(tittle + '_Picture').alt = image
+    document.getElementById(tittle + '_PictureBackground').style.backgroundImage = 'url(' + image + ')'
   }
 
   return (
@@ -61,11 +68,11 @@ function getNewProjectElement(data, index) {
           {skillsElements}
         </div>
       </div>
-      <div className='PictureSection' id={tittle + '_PictureBackground'} style={{ backgroundImage: 'url(' + new URL('../..' + data.images[data.images.length - 1], import.meta.url).pathname + ')' }}>
+      <div className='PictureSection' id={tittle + '_PictureBackground'} style={{ backgroundImage: 'url(' + data.images[defaultImageIndex] + ')' }}>
         <div className='PictureSectionNavigation'>
           {imageElements}
         </div>
-        <img id={tittle + '_Picture'} height='250px' src={new URL('../..' + data.images[data.images.length - 1], import.meta.url).pathname} alt={new URL('../..' + data.images[data.images.length - 1], import.meta.url).pathname} />
+        <img id={tittle + '_Picture'} height='250px' src={data.images[defaultImageIndex]} />
       </div>
     </div>
   )
