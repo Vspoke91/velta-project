@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import './Home.css'
 import Animation from "../../Utils/FramerAnimations"
 import Header from '../../components/header/Header';
+import imageURLS from '../../data/ArtWorkImages'
 
 function Home() {
 
@@ -13,19 +14,25 @@ function Home() {
       <Header logoName={'Velta Project'} />
       <div className='mainContent' id='HomePageContent'>
         <TittleSection />
-        <CodingSection image={new URL('../../images/Coding/Survival_1.png', import.meta.url).pathname} />
-        <ArtWorkSection image={new URL('../../images/ArtWork/MoonFlower.png', import.meta.url).pathname} />
+        <CodingSection image={'/images/Coding/Survival_1.png'} />
+        <ArtWorkSection image={'/images/ArtWork/MoonFlower.png'} />
       </div>
     </div>
   )
 }
 
 const TittleSection = () => {
-
-  let images = import.meta.glob('../../images/ArtWork/*.(jpg|png|jpeg)', { eager: true, import: 'default' });
   let imageElement = []
 
-  Object.values(images).forEach((img, index) => { imageElement[index] = <SplideSlide><img src={img} alt={img} /></SplideSlide> });
+  Object.values(imageURLS).forEach((img, index) => {
+    imageElement[index] =
+      <SplideSlide
+        key={index}>
+        <img
+          src={img}
+          alt={img} />
+      </SplideSlide>
+  });
 
   const slideOptions = {
     arrows: false,
