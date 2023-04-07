@@ -41,16 +41,32 @@ const TittleSection = () => {
     type: "loop",
     drag: "free",
     autoScroll: {
-      speed: 0.4,
+      speed: 0.2,
       pauseOnHover: false
     }
 
   }
 
   return (
-    <motion.div className='contentTittle' variants={Animation.fadeIn(0, 100)} initial="hidden" whileInView="show" viewport={{ once: true }}>
+    <motion.div className='contentTittle' variants={Animation.fadeIn(0, 0)} initial="hidden" whileInView="show" viewport={{ once: true }}>
       <Splide id='HomeTittleSlide' options={slideOptions} extensions={{ AutoScroll }}>{imageElement}</Splide>
-      <motion.h1 className='unselectable' variants={Animation.fadeOut(0.4)} whileHover="fade">Velta-Projects</motion.h1>
+
+      <div className='tittleHolder unselectable' >
+
+        <p style={{ fontWeight: '400' }}>Imagination</p>
+        <p style={{ fontWeight: '100' }}>is the seed of</p>
+        <p style={{ fontWeight: '1000' }}>creativity</p>
+        <p
+          style={{
+            fontWeight: '200',
+            fontSize: '1rem',
+            marginTop: '10px'
+          }}>
+          Art that started on paper to the digital world
+        </p>
+
+      </div>
+      {/* <motion.p className='unselectable' variants={Animation.fadeOut(0.4)} whileHover="fade">Imagination is the seed of creativity</motion.p> */}
     </motion.div>
   )
 }

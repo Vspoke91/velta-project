@@ -1,5 +1,4 @@
 #HomePageContent {
-    padding-top: 60px;
     margin: auto;
     color: white;
     text-align: center;
@@ -15,14 +14,14 @@
     align-items: center;
     overflow: hidden;
 
-    height: clamp(350px, 30vw, 500px);
+    height: 80vh;
     background-color: rgba(0, 0, 0, 0.178);
     background-blend-mode: multiply;
 }
 
 #HomeTittleSlide {
-    height: 100%;
-    width: 100vh;
+    height: inherit;
+    width: 100%;
 }
 
 #HomeTittleSlide .splide__arrows {
@@ -72,13 +71,20 @@
     height: inherit;
 }
 
-#HomePageContent .contentTittle h1 {
-    font-size: clamp(25px, 10vw, 65px);
+#HomePageContent .tittleHolder {
+    font-size: 2rem;
+    text-align: left;
+
     position: absolute;
-    color: #f7f9ff;
     z-index: 1;
-    background-color: #00000020;
-    padding: 3px 10px;
+
+    width: 90%;
+    max-width: 900px;
+    bottom: 40px;
+
+
+    color: #f7f9ff;
+    cursor: default;
 }
 
 #HomePageContent .contentItem {
