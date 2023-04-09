@@ -1,5 +1,4 @@
 #HomePageContent {
-    padding-top: 60px;
     margin: auto;
     color: white;
     text-align: center;
@@ -15,14 +14,14 @@
     align-items: center;
     overflow: hidden;
 
-    height: clamp(350px, 30vw, 500px);
+    height: 90vh;
     background-color: rgba(0, 0, 0, 0.178);
     background-blend-mode: multiply;
 }
 
 #HomeTittleSlide {
-    height: 100%;
-    width: 100vh;
+    height: inherit;
+    width: 100%;
 }
 
 #HomeTittleSlide .splide__arrows {
@@ -72,13 +71,19 @@
     height: inherit;
 }
 
-#HomePageContent .contentTittle h1 {
-    font-size: clamp(25px, 10vw, 65px);
+#HomePageContent .tittleHolder {
+    font-size: 2rem;
+    text-align: left;
+
     position: absolute;
-    color: #f7f9ff;
     z-index: 1;
-    background-color: #00000020;
-    padding: 3px 10px;
+
+    width: 90%;
+    bottom: 40px;
+
+
+    color: #f7f9ff;
+    cursor: default;
 }
 
 #HomePageContent .contentItem {
@@ -90,7 +95,7 @@
     scroll-snap-align: start;
 
     padding: 0 10px;
-    max-height: 1000px;
+    height: 100vh;
 
     margin: 100px auto;
     max-width: 1800px;
@@ -109,31 +114,38 @@
 }
 
 #HomePageContent .itemText {
+    display: flex;
+    flex-direction: column;
+
     flex: 0.5;
     margin-right: 10vh;
     margin-left: 0vh;
-    padding-bottom: 4vh;
 }
 
-#HomePageContent .itemText h1 {
-    font-size: 2.5rem;
-}
+#HomePageContent .itemText a {
+    display: flex;
+    border: none;
 
-#HomePageContent .itemText h2 {
-    font-size: 1.3rem;
+    margin: auto;
+
+    justify-content: center;
+    text-decoration: none;
 }
 
 #HomePageContent .itemText a button {
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+
     font-size: 1.5rem;
     color: #adadad;
     text-decoration: none;
 
+    gap: 10px;
+
     padding: 0;
     border: none;
-
-    border-color: #3396e2;
-    border-bottom-width: 3px;
-    border-bottom-style: solid;
 
     background-color: transparent;
 }

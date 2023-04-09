@@ -48,6 +48,53 @@ const Animation =
         }
       }
     }
+  },
+
+  foldOut: (direction, duration) => {
+
+    let yDegree = 0
+    let xDegree = 0
+
+    if (direction === 'vertical')
+      xDegree = 90;
+    else if (direction === 'horizontal')
+      yDegree = 90;
+    else
+      xDegree = 90;
+
+    if (!duration)
+      duration = 1;
+
+
+    return {
+      hidden: {
+        opacity: 0,
+        rotateX: xDegree,
+        rotateY: yDegree
+      },
+      show: {
+        opacity: 1,
+        rotateX: 0,
+        rotateY: 0,
+        transition: {
+          ease: 'easeOut',
+          duration: duration,
+        }
+      }
+    }
+  },
+
+  childDelay: (childrenDelay) => {
+    if (!childrenDelay)
+      childrenDelay = 0.5
+
+    return {
+      show: {
+        transition: {
+          staggerChildren: childrenDelay,
+        }
+      }
+    }
   }
 }
 
