@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import './Home.css'
 import Animation from "../../Utils/FramerAnimations"
 import Header from '../../components/header/Header';
+import Footer from '../../components/footer/Footer'
 import imageURLS from '../../data/ArtWorkImages'
 
 function Home() {
@@ -17,6 +18,7 @@ function Home() {
         <CodingSection image={'/images/Coding/Survival_1.png'} />
         <ArtWorkSection image={'/images/ArtWork/MoonFlower.png'} />
       </div>
+      <Footer />
     </div>
   )
 }
