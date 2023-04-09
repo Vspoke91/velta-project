@@ -27,12 +27,12 @@ function SelectorSwitch() {
   return linkElements
 }
 
-function Header({ logoName }) {
+function Header() {
   return (
     <header className='App-header'>
       <a className='App-logo' href='/'>
         <img src='VeltaLogo.png' alt='img' />
-        <span>{logoName}</span>
+        <span>Velta Project</span>
       </a>
       <nav>
         {SelectorSwitch()}
