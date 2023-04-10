@@ -1,0 +1,36 @@
+#Footer {
+    color: rgb(219, 219, 219);
+    background-color: #12171f;
+
+    display: flex;
+
+    height: 200px;
+
+    overflow: auto;
+}
+
+#Footer .work {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+#Footer h1 {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+#Footer .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    gap: 29px;
+}
+
+#Footer .icons a img {
+    height: 50px;
+    width: auto;
+}

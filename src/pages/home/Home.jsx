@@ -106,17 +106,17 @@ const CodingSection = ({ image }) => {
             fontSize: '1.3rem', fontWeight: '300'
           }}>
           Started as
-          <spam style={{
+          <span style={{
             color: '#278cd9'
-          }}> curiosity </spam>
+          }}> curiosity </span>
           to create content for games, that later developed into a
-          <spam style={{
+          <span style={{
             color: '#278cd9'
-          }}> hobby </spam>
+          }}> hobby </span>
           to create tools to help others, finally into a
-          <spam style={{
+          <span style={{
             color: '#278cd9'
-          }}> passion </spam>
+          }}> passion </span>
           to pursued a career as a developer
         </p>
 
@@ -159,7 +159,7 @@ const CodingSection = ({ image }) => {
 
         </motion.div>
 
-        <motion.a href='/Coding'><motion.button variants={Animation.resize(1.05, "white")} whileHover="show">Go to section  <img src='/Icons/ArrowUtil.svg' /></motion.button></motion.a>
+        <motion.a href='/Coding'><motion.button variants={Animation.resize(1.05, "white")} whileHover="show">Go to section <img src='/Icons/ArrowUtil.svg' /></motion.button></motion.a>
       </motion.div>
 
       <motion.div className='itemImages' variants={Animation.foldOut('vertical', 2)} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0 }}>
@@ -197,9 +197,9 @@ const ArtWorkSection = ({ image }) => {
             fontSize: '1.3rem', fontWeight: '300'
           }}>
           Art is a way to express happiness, sadness, anger, and all other emotions. Your
-          <spam style={{
+          <span style={{
             color: '#278cd9'
-          }}> creativity is your limit </spam>
+          }}> creativity is your limit </span>
           when creating art, for that same reason I show what I create to the world.
         </p>
 
