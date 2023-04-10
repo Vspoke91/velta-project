@@ -63,17 +63,6 @@
 
 }
 
-#Footer .icons a span::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: black transparent transparent transparent;
-}
-
 #Footer .icons a:hover span {
     visibility: visible;
 }
