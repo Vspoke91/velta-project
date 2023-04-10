@@ -22,33 +22,44 @@ function Footer() {
                         color: '#2985cc'
                     }}>victorvjro91@gmail.com</a>
             </div>
+
             <div className='icons'>
-                <a href='https://github.com/Vspoke91'>
-                    <motion.img
-                        variants={Animation.fadeIn(50)}
-                        whileHover={{ scale: 1.2 }}
-                        src='/Icons/Github.svg' />
-                </a>
+                <motion.a
+                    href='https://github.com/Vspoke91'
+                    variants={Animation.fadeIn(50)}
+                    whileHover={{ scale: 1.2 }}>
 
-                <a href='https://www.linkedin.com/in/victor-romero-4630b8228/'>
-                    <motion.img
-                        variants={Animation.fadeIn(50)}
-                        whileHover={{ scale: 1.2 }}
-                        src='/Icons/LinkedIn.svg' />
-                </a>
+                    <img src='/Icons/Github.svg' />
+                    <span>Github</span>
+                </motion.a>
 
-                <a href='https://portfolio.veltaproject.com/'>
-                    <motion.img
-                        variants={Animation.fadeIn(50)}
-                        whileHover={{ scale: 1.2 }}
-                        src='/Icons/Portfolio.svg' />
-                </a>
-                <a href='https://www.upwork.com/freelancers/~01a9fddd1aec6d32ce/'>
-                    <motion.img
-                        variants={Animation.fadeIn(50)}
-                        whileHover={{ scale: 1.2 }}
-                        src='/Icons/Upwork.svg' />
-                </a>
+                <motion.a
+                    href='https://www.linkedin.com/in/victor-romero-4630b8228/'
+                    variants={Animation.fadeIn(50)}
+                    whileHover={{ scale: 1.2 }}>
+
+                    <img src='/Icons/LinkedIn.svg' />
+                    <span>LinkedIn</span>
+                </motion.a>
+
+                <motion.a
+                    href='https://portfolio.veltaproject.com/'
+                    variants={Animation.fadeIn(50)}
+                    whileHover={{ scale: 1.2 }}>
+
+                    <img src='/Icons/Portfolio.svg' />
+                    <span>Portfolio Website</span>
+                </motion.a>
+
+                <motion.a
+                    href='https://www.upwork.com/freelancers/~01a9fddd1aec6d32ce/'
+                    variants={Animation.fadeIn(50)}
+                    whileHover={{ scale: 1.2 }}>
+
+                    <img src='/Icons/Upwork.svg' />
+                    <span>Upwork</span>
+                </motion.a>
+
             </div>
         </div >
     )
