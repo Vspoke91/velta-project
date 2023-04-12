@@ -99,6 +99,7 @@ const CodingSection = ({ image }) => {
           }}>Coding Project</motion.h1>
 
         <p
+          className='innerSentence'
           style={{
             paddingBottom: "40px",
             width: '90%', maxWidth: '500px',
@@ -190,6 +191,7 @@ const ArtWorkSection = ({ image }) => {
           }}>Art Work</motion.h1>
 
         <p
+          className='innerSentence'
           style={{
             paddingBottom: "40px",
             width: '90%', maxWidth: '500px',
