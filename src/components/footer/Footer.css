@@ -1,0 +1,75 @@
+#Footer {
+    color: rgb(219, 219, 219);
+    background-color: #12171f;
+
+    display: flex;
+
+    height: 200px;
+
+    overflow: auto;
+}
+
+#Footer .work {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+#Footer h1 {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+#Footer .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    gap: 29px;
+}
+
+#Footer .icons a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    height: 50px;
+    width: auto;
+}
+
+#Footer .icons a img {
+    z-index: 1;
+    height: inherit;
+    width: inherit;
+}
+
+#Footer .icons a span {
+    visibility: hidden;
+    position: absolute;
+
+
+
+    white-space: nowrap;
+
+    color: #eaf1f6;
+    background-color: #273445;
+    padding: 2px 10px;
+    border-radius: 4px;
+
+    z-index: 1;
+    top: -60%;
+
+}
+
+#Footer .icons a:hover span {
+    visibility: visible;
+}
+
+@media(max-width: 600px) {
+    #Footer {
+        height: 250px;
+        flex-direction: column;
+    }
+}
