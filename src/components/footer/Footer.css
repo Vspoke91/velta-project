@@ -66,3 +66,10 @@
 #Footer .icons a:hover span {
     visibility: visible;
 }
+
+@media(max-width: 600px) {
+    #Footer {
+        height: 250px;
+        flex-direction: column;
+    }
+}

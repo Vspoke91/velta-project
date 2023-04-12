@@ -99,6 +99,7 @@ const CodingSection = ({ image }) => {
           }}>Coding Project</motion.h1>
 
         <p
+          className='innerSentence'
           style={{
             paddingBottom: "40px",
             width: '90%', maxWidth: '500px',
@@ -159,7 +160,7 @@ const CodingSection = ({ image }) => {
 
         </motion.div>
 
-        <motion.a href='/Coding'><motion.button variants={Animation.resize(1.05, "white")} whileHover="show">Go to section <img src='/Icons/ArrowUtil.svg' /></motion.button></motion.a>
+        <motion.a href='/Coding'><motion.button variants={Animation.resize(1.05, "white")} whileHover="show">Go to section <img src='/Icons/ArrowUtils.svg' /></motion.button></motion.a>
       </motion.div>
 
       <motion.div className='itemImages' variants={Animation.foldOut('vertical', 2)} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0 }}>
@@ -190,6 +191,7 @@ const ArtWorkSection = ({ image }) => {
           }}>Art Work</motion.h1>
 
         <p
+          className='innerSentence'
           style={{
             paddingBottom: "40px",
             width: '90%', maxWidth: '500px',
@@ -224,7 +226,7 @@ const ArtWorkSection = ({ image }) => {
             src='/Icons/Gimp.svg' />
 
         </motion.div>
-        <a href='/ArtWork'><motion.button variants={Animation.resize(1.05, "white")} whileHover="show">Go to section <img src='/Icons/ArrowUtil.svg' /></motion.button></a>
+        <a href='/ArtWork'><motion.button variants={Animation.resize(1.05, "white")} whileHover="show">Go to section <img src='/Icons/ArrowUtils.svg' /></motion.button></a>
       </motion.div>
 
       <motion.div className='itemImages' variants={Animation.foldOut('horizontal', 2)} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0 }}>

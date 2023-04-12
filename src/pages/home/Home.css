@@ -203,3 +203,14 @@
         background-color: #383838;
     }
 }
+
+@media(max-width: 600px) {
+    #HomePageContent .contentItem {
+        display: flex;
+
+    }
+
+    #HomePageContent .itemText .innerSentence {
+        width: 90vw !important;
+    }
+}
