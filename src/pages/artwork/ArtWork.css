@@ -55,3 +55,9 @@
         min-width: 0;
     }
 }
+
+@media(max-width: 600px) {
+    #artWorkPageContent {
+        padding: 0;
+    }
+}
